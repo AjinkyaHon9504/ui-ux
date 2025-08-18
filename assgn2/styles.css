@@ -1,0 +1,550 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navigation */
+.navbar {
+  /* Simplified navigation with basic red background */
+  background-color: #dc2626;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h2 {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  /* Simple hover effect with basic blue background */
+  background-color: #1e40af;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 70vh;
+  /* Simple blue background instead of gradient */
+  background-color: #1e40af;
+  color: white;
+  padding: 4rem 0;
+}
+
+.hero-content {
+  flex: 1;
+  padding: 0 2rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: white;
+  color: #1e40af;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.cta-button:hover {
+  /* Simple hover effect without transforms */
+  background-color: #f0f0f0;
+  color: #dc2626;
+}
+
+.hero-image {
+  flex: 1;
+  padding: 0 2rem;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Section Styles */
+.section {
+  padding: 4rem 0;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #1e40af;
+}
+
+/* Features Grid */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.feature {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 5px;
+  /* Simple border instead of shadow effects */
+  border: 2px solid #e5e5e5;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #1e40af;
+}
+
+/* Tips Section */
+.tips {
+  background: #f5f5f5;
+}
+
+.tips h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #1e40af;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.tip-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 5px;
+  /* Simple border instead of shadow */
+  border: 1px solid #ddd;
+}
+
+.tip-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #dc2626;
+}
+
+/* Must Visit Section */
+.must-visit {
+  background: white;
+}
+
+.must-visit h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #1e40af;
+}
+
+/* Simplified destinations grid without fancy effects */
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.destination-card {
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 2px solid #e5e5e5;
+}
+
+.destination-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.destination-content {
+  padding: 1.5rem;
+}
+
+.destination-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #dc2626;
+}
+
+.destination-content p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Packages Section */
+.packages {
+  background: #f5f5f5;
+}
+
+.packages h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #1e40af;
+}
+
+/* Simplified package cards without fancy effects */
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.package-card {
+  background: white;
+  border-radius: 5px;
+  padding: 2rem;
+  border: 2px solid #e5e5e5;
+}
+
+.package-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.package-title {
+  font-size: 1.8rem;
+  color: #1e40af;
+  margin-bottom: 0.5rem;
+}
+
+.package-price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #dc2626;
+  margin-bottom: 0.5rem;
+}
+
+.package-duration {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.package-details {
+  margin-bottom: 2rem;
+}
+
+.package-details h4 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.package-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.package-details li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.package-book-btn {
+  background-color: #dc2626;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: center;
+  display: block;
+}
+
+.package-book-btn:hover {
+  /* Simple hover effect */
+  background-color: #b91c1c;
+}
+
+/* Booking Form */
+.booking-form {
+  background: white;
+}
+
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 3rem;
+  border-radius: 5px;
+  border: 2px solid #e5e5e5;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #1e40af;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.checkbox-group input {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.submit-btn,
+.reset-btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background-color: #dc2626;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #b91c1c;
+}
+
+.reset-btn {
+  background-color: #ddd;
+  color: #666;
+}
+
+.reset-btn:hover {
+  background-color: #ccc;
+}
+
+/* Gallery */
+.gallery {
+  background: white;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.gallery-item {
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 2px solid #e5e5e5;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.gallery-caption {
+  padding: 1.5rem;
+}
+
+.gallery-caption h3 {
+  color: #1e40af;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-caption p {
+  color: #666;
+}
+
+/* Contact */
+.contact {
+  background: #f5f5f5;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.contact-info,
+.about-us {
+  background: white;
+  padding: 2rem;
+  border-radius: 5px;
+  border: 2px solid #e5e5e5;
+}
+
+.contact-info h3,
+.about-us h3 {
+  color: #1e40af;
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background: white;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #e5e5e5;
+}
+
+.social-link:hover {
+  /* Simple hover effect */
+  background-color: #f0f0f0;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.social-info h3 {
+  color: #1e40af;
+  margin-bottom: 0.5rem;
+}
+
+.social-info p {
+  color: #666;
+  margin: 0;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+}
