@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TechFest 2025 — Photo Gallery</title>
+  <style>
+    :root { --primary:#2563eb; --text:#111827; --muted:#4b5563; --bg:#ffffff; }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif}
+    a{color:var(--primary);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1000px;margin:0 auto;padding:16px}
+    header{border-bottom:1px solid rgba(17,24,39,.1);background:#fff}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{font-weight:700;font-size:20px}
+    nav ul{display:flex;gap:12px;list-style:none;margin:0;padding:0}
+    nav a{padding:8px 10px;border-radius:6px}
+    nav a[aria-current="page"]{background:rgba(37,99,235,.08)}
+    main{padding:24px 0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+    .grid img{width:100%;height:160px;object-fit:cover;border-radius:8px;display:block}
+    h2{margin-top:24px}
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav" role="navigation" aria-label="Main">
+    <div class="brand">TechFest 2025</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+        <li><a href="contact.html">Contact & FAQs</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Photo Gallery</h1>
+  <p class="muted">Highlights from our events and campus activities.</p>
+
+  <section aria-label="This Year Gallery">
+    <div class="grid">
+      <img src="https://picsum.photos/id/1011/600/400" alt="Event photo 1 - campus outdoors" />
+      <img src="https://picsum.photos/id/1015/600/400" alt="Event photo 2 - students collaborating" />
+      <img src="https://picsum.photos/id/1025/600/400" alt="Event photo 3 - robotics demo" />
+      <img src="https://picsum.photos/id/1035/600/400" alt="Event photo 4 - lecture hall" />
+      <img src="https://picsum.photos/id/1041/600/400" alt="Event photo 5 - coding session" />
+      <img src="https://picsum.photos/id/1050/600/400" alt="Event photo 6 - presentation" />
+      <img src="https://picsum.photos/id/1057/600/400" alt="Event photo 7 - workshop" />
+      <img src="https://picsum.photos/id/1067/600/400" alt="Event photo 8 - team photo" />
+      <img src="https://picsum.photos/id/1074/600/400" alt="Event photo 9 - campus building" />
+      <img src="https://picsum.photos/id/1084/600/400" alt="Event photo 10 - lab" />
+      <img src="https://picsum.photos/id/1080/600/400" alt="Event photo 11 - audience" />
+      <img src="https://picsum.photos/id/109/600/400" alt="Event photo 12 - celebration" />
+    </div>
+  </section>
+
+  <section id="previous-year" aria-label="Previous Year Gallery">
+    <h2>Previous Year Highlights</h2>
+    <div class="grid">
+      <img src="https://picsum.photos/id/237/600/400" alt="Previous year photo 1 - campus" />
+      <img src="https://picsum.photos/id/238/600/400" alt="Previous year photo 2 - group activity" />
+      <img src="https://picsum.photos/id/239/600/400" alt="Previous year photo 3 - awards" />
+      <img src="https://picsum.photos/id/240/600/400" alt="Previous year photo 4 - robotics track" />
+      <img src="https://picsum.photos/id/241/600/400" alt="Previous year photo 5 - coding arena" />
+      <img src="https://picsum.photos/id/242/600/400" alt="Previous year photo 6 - audience cheering" />
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 0;border-top:1px solid rgba(17,24,39,.1)">
+    <p style="margin:0;color:#4b5563">© 2025 TechFest Committee</p>
+    <ul style="display:flex;gap:12px;list-style:none;margin:0;padding:0">
+      <li><a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a></li>
+      <li><a href="#previous-year">Previous Year Gallery</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>
